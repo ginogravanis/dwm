@@ -6,15 +6,24 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=14" };
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+static const char gruvbox_bg0_h[]     = "#1d2021";
+static const char gruvbox_bg0[]       = "#282828";
+static const char gruvbox_bg1[]       = "#3c3836";
+static const char gruvbox_bg4[]       = "#7c6f64";
+static const char gruvbox_fg0[]       = "#fbf1c7";
+static const char gruvbox_fg1[]       = "#ebdbb2";
+static const char gruvbox_fg2[]       = "#d5c4a1";
+static const char gruvbox_fg3[]       = "#bdae93";
+static const char gruvbox_blue1[]     = "#458588";
+static const char gruvbox_blue2[]     = "#83a598";
+static const char gruvbox_green1[]    = "#98971a";
+static const char gruvbox_green2[]    = "#b8bb26";
+static const char gruvbox_orange1[]   = "#d65d0e";
+static const char gruvbox_orange2[]   = "#fe8019";
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	/*               fg               bg               border   */
+	[SchemeNorm] = { gruvbox_fg3,     gruvbox_bg0,     gruvbox_bg0 },
+	[SchemeSel]  = { gruvbox_bg0_h,   gruvbox_green1,  gruvbox_bg4 },
 };
 
 /* tagging */
